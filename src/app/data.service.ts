@@ -10,78 +10,78 @@ export class DataService {
   data = [
     {
       custid: 1,
-      name: "Vaishu",
+      name: "Vaishnava Priya",
       amt: 120,
       transactionDt: "03-01-2019"
     },
     {
       custid: 1,
-      name: "Vaishu",
+      name: "Vaishnava Priya",
       amt: 75,
       transactionDt: "04-21-2019"
     },
     {
       custid: 1,
-      name: "Vaishu",
+      name: "Vaishnava Priya",
       amt: 200,
       transactionDt: "05-01-2019"
     },
     {
       custid: 1,
-      name: "Vaishu",
+      name: "Vaishnava Priya",
       amt: 224,
       transactionDt: "05-21-2019"
     },
     {
       custid: 2,
-      name: "Kalai",
+      name: "John Smith",
       amt: 125,
       transactionDt: "03-01-2019"
     },
     {
       custid: 2,
-      name: "Kalai",
+      name: "John Smith",
       amt: 75,
       transactionDt: "04-21-2019"
     },
     {
       custid: 2,
-      name: "Kalai",
+      name: "John Smith",
       amt: 224,
       transactionDt: "05-21-2019"
     },
     {
       custid: 3,
-      name: "Diya",
+      name: "Rebecca Wilson",
       amt: 120,
       transactionDt: "04-21-2019"
     },
     {
       custid: 3,
-      name: "Diya",
+      name: "Rebecca Wilson",
       amt: 200,
       transactionDt: "03-01-2019"
     },
     {
       custid: 3,
-      name: "Diya",
+      name: "Rebecca Wilson",
       amt: 224,
       transactionDt: "05-21-2019"
     },{
       custid: 4,
-      name: "Priya",
+      name: "James Q Quick",
       amt: 768,
       transactionDt: "04-21-2019"
     },
     {
       custid: 4,
-      name: "Priya",
+      name: "James Q Quick",
       amt: 198,
       transactionDt: "03-01-2019"
     },
     {
       custid: 4,
-      name: "Priya",
+      name: "James Q Quick",
       amt: 500,
       transactionDt: "05-21-2019"
     }
