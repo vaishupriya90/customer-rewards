@@ -1,0 +1,16 @@
+
+<!-- <hr> -->
+<div class="container">
+    <span class="float-left" >List of Customers</span>
+    <span class="float-right">Total Reward Points</span>
+</div>
+
+<div>
+    <br>
+    <app-customer-item 
+    *ngFor="let customerItem of customerList" 
+    [customer]="customerItem" 
+    (customerSelected)="onCustomerSelected(customerItem)">
+    </app-customer-item>
+</div>
+        
