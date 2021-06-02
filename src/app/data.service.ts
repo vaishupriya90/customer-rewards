@@ -10,27 +10,27 @@ export class DataService {
   data = [
     {
       custid: 1,
-      name: "Vaishnava Priya",
+      name: "Vaishnava Priya Chellaiya",
       amt: 120,
       transactionDt: "03-01-2019"
     },
     {
       custid: 1,
-      name: "Vaishnava Priya",
+      name: "Vaishnava Priya Chellaiya",
       amt: 75,
       transactionDt: "04-21-2019"
     },
     {
       custid: 1,
-      name: "Vaishnava Priya",
+      name: "Vaishnava Priya Chellaiya",
       amt: 200,
       transactionDt: "05-01-2019"
     },
     {
       custid: 1,
-      name: "Vaishnava Priya",
+      name: "Vaishnava Priya Chellaiya",
       amt: 224,
-      transactionDt: "05-21-2019"
+      transactionDt: "05-21-2019" 
     },
     {
       custid: 2,
