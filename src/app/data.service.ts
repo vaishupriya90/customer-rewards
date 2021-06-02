@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Transaction } from './transaction/transaction.model';
 
 @Injectable({
   providedIn: 'root'
@@ -119,12 +120,12 @@ calculateRewardsPerMonth(eachCustomer){
     }
     console.log('Transaction Per Month: ' + JSON.stringify(transactionPerMonth));
     console.log('Rewards Per Month: ' + JSON.stringify(rewardsPerMonth));
-  return transactionPerMonth;
+  return rewardsPerMonth;
 
 }
 
 
-calculateTotalRewards(transactionDetails){
+calculateTotalRewards(transactionDetails : Transaction[]){
   let totalRewards = 0;
   for(let i=0;i< transactionDetails.length ;i++){
     let amountSpent = (transactionDetails[i].transactionAmount);

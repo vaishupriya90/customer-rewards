@@ -1,21 +1,24 @@
-
 <div class="container">
-    <br>
-    <div class="card" style="width: 25rem;">
-        <div class="card-body">
-          <h5 class="card-title float-left">{{customerDetail.name}}</h5>
-          <h5 class="card-title float-right">Customer Id - {{customerDetail.customerId}}</h5>
-          <br>
-          <h6 class="card-subtitle mb-2 text-muted float-left">Total Points Earned - {{totalPoints(customerDetail)}}</h6>
-            <br>
-          <hr>
-          
-          <p style="font-family:sans-serif;">Points earned Per Month:</p>
-          <p class="card-text"> March: {{pointsForEachMonth(customerDetail).March}}</p>
-          <p class="card-text">April: {{pointsForEachMonth(customerDetail).April}}</p>
-          <p class="card-text">May: {{pointsForEachMonth(customerDetail).May}}</p>         
-        </div>
+  <br>
+  <div class="card" style="width: 25rem;">
+    <div class="card-body">
+      <h5 class="card-title float-left">{{customerDetail.name}}</h5>
+      <h5 class="card-title float-right">Customer Id - {{customerDetail.customerId}}</h5>
+      <br>
+      <h6 class="card-subtitle mb-2 text-muted float-left">Total Points Earned - {{totalPoints(customerDetail)}}</h6>
+      <br>
+      <hr>
+
+      <p style="font-family:sans-serif;">Points earned Per Month:</p>
+      <div>
+        <p type="hidden">{{pointsForEachMonth(customerDetail)}}</p>
       </div>
+      <div *ngFor="let item of rewardPointsPerMonth | keyvalue">
+        {{item.key}} : {{item.value}}
+      </div>
+      <p class="card-text"></p>
+      <p class="card-text"></p>
+      <p class="card-text"></p>
+    </div>
+  </div>
 </div>
-
-
