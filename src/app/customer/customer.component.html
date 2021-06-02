@@ -1,1 +1,13 @@
-<p>customer works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <app-customer-list (selectedCustomer)="theSelectedCustomerItem = $event"></app-customer-list>
+        </div>
+        <div class="col-md-7">
+            <app-customer-detail *ngIf="theSelectedCustomerItem; else infoNote" [customerDetail]="theSelectedCustomerItem"></app-customer-detail>
+            <ng-template #infoNote>
+                <h4 style="text-align: center;">Please select an item for Details!</h4>
+            </ng-template>
+        </div>
+    </div>
+</div>

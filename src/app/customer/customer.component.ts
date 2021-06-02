@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+import { Transaction } from '../transaction/transaction.model';
+import { Customer } from './customer.model';
 
 @Component({
   selector: 'app-customer',
@@ -6,13 +9,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./customer.component.css']
 })
 export class CustomerComponent implements OnInit {
-  name : String;
 
-  constructor(name : String) { 
-    this.name = name;
-  }
+  customerDetail : Customer;
+  theSelectedCustomerItem:Customer;
+  constructor() { }
 
   ngOnInit(): void {
   }
+  onSelectCustomer(customer : Customer){
+    this.customerDetail = customer;
+
+  }
+
+  
+
+
 
 }

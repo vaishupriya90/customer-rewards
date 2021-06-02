@@ -1,51 +1,11 @@
-<div class="container-fluid" style="background-color: cadetblue;color: cornsilk;">
-  <!-- Navbar content -->
+<div class="container-fluid" style="background-color: cadetblue;color: cornsilk;font-family: cursive;">
   <h1 class='text-center'>Customer Rewards System</h1>
 </div>
-<table class="table container">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">Customer ID</th>
-      <th scope="col">Name</th>
-      <th scope="col">Amount</th>
-      <th scope="col">Transaction Date</th>
-      <th scope="col">Reward Points</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let data of datas"> 
-      <td>{{data.custid}}</td>
-      <td>{{data.name}}</td>
-      <td>{{data.amt}}</td>
-      <td>{{data.transactionDt}}</td>
-      <td>{{calculateRewards(data.amt)}}</td>
-    </tr>
-  </tbody>
-</table>
-<hr>
-
-<table class="table container">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">Customer ID</th>
-      <th scope="col">Name</th>
-      <th scope="col">March Month</th>
-      <th scope="col">April Month</th>
-      <th scope="col">May Month</th>
-      <th scope="col">Total Reward Points</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let customerDetail of customerDetails"> 
-      <td>{{customerDetail.customerId}}</td>
-      <td>{{customerDetail.name}}</td>
-      <td>{{calculateRewardsPerMonth(customerDetail).March}}</td>
-      <td>{{calculateRewardsPerMonth(customerDetail).April}}</td>
-      <td>{{calculateRewardsPerMonth(customerDetail).May}}</td>
-      <td>{{calculateTotalRewards(customerDetail.transactionDetail)}}</td>
-    </tr>
-  </tbody>
-</table>
-<tr *ngFor="let customerDetail of customerDetails">
-  <td>{{customerDetail.name}}</td>
-</tr>
+<br>
+<div class="container" >
+  <div class="row">
+    <div class="col-md-12">
+      <app-customer></app-customer>
+    </div>
+  </div>
+</div>
