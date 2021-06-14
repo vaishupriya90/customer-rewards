@@ -23,12 +23,10 @@ export class CustomerListComponent implements OnInit {
   ngOnInit(){
     this.sort();
   }
-  
+    
   sort(){
-    console.log("entered sort")
-
-    let newValue = this.datas.reduce((prev:{custid: number,name: string,amt: number,
-      transactionDt: string}, cur:{custid: number,name: string,amt: number,transactionDt: string}) => {
+    //console.log("entered sort")
+      this.datas.forEach(cur => {
       const index = this.customerList.findIndex(v => v.customerId === cur.custid);
       //console.log("Curr Index:"+index);
       if (index === -1) {
@@ -36,10 +34,7 @@ export class CustomerListComponent implements OnInit {
       } else {
         this.customerList[index].transactionDetail.push(new Transaction(cur.amt,cur.transactionDt));
       }
-      if(prev===null)
-        return cur;
-      return prev;
-  },null);
+  });
   console.log("Customer List: "+JSON.stringify(this.customerList))
   }
 
